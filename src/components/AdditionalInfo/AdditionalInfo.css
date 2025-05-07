@@ -1,0 +1,46 @@
+.languages,
+.additional-info,
+.other-info {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.languages:last-child,
+.additional-info:last-child,
+.other-info:last-child {
+  margin-bottom: 0;
+}
+
+.languages h2,
+.additional-info h2,
+.other-info h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.languages ul,
+.additional-info ul,
+.other-info ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.languages li,
+.additional-info li,
+.other-info li {
+  color: #555;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.languages li:last-child,
+.additional-info li:last-child,
+.other-info li:last-child {
+  margin-bottom: 0;
+}
+
+.languages li strong {
+  color: #444;
+  font-weight: 600;
+}

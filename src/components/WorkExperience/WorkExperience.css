@@ -1,0 +1,46 @@
+.work-experience {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.work-experience h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.job {
+  margin-bottom: 2rem;
+}
+
+.job h3 {
+  color: #444;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+.job .company {
+  color: #666;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
+
+.job ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.job li {
+  color: #555;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.job li:last-child {
+  margin-bottom: 0;
+}
+
+.job li strong {
+  color: #444;
+  font-weight: 600;
+}

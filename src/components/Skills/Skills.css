@@ -1,16 +1,30 @@
 .skills {
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .skills h2 {
-  color: #333;
-  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.8rem;
   font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .skills-category {
   margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--background-primary);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.skills-category:hover {
+  transform: translateY(-2px);
 }
 
 .skills-category:last-child {
@@ -18,20 +32,32 @@
 }
 
 .skills-category h3 {
-  color: #444;
+  color: var(--secondary-color);
   margin: 0 0 1rem 0;
   font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .skills-category ul {
   margin: 0;
   padding-left: 1.5rem;
+  list-style-type: none;
 }
 
 .skills-category li {
-  color: #555;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.skills-category li::before {
+  content: '•';
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
 }
 
 .skills-category li:last-child {

@@ -1,17 +1,28 @@
 .professional-profile {
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.professional-profile:hover {
+  transform: translateY(-2px);
 }
 
 .professional-profile h2 {
-  color: #333;
-  margin-bottom: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 1.2rem;
   font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .professional-profile p {
-  color: #555;
-  line-height: 1.6;
+  color: var(--text-primary);
+  line-height: 1.8;
   text-align: justify;
   margin: 0;
+  font-size: 1.05rem;
 }

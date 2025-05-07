@@ -1,16 +1,26 @@
 .header {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .profile-pic {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
+  border: 4px solid var(--background-primary);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
 }
 
 .header-text {
@@ -19,21 +29,31 @@
 
 .header-text h1 {
   margin: 0;
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  color: #666;
-  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  margin: 0.7rem 0;
+  font-weight: 500;
 }
 
 .contact-info {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .contact-info p {
-  margin: 0.25rem 0;
-  color: #555;
+  margin: 0;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
 }

@@ -1,0 +1,292 @@
+body {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Un gris un poco más claro */
+  color: #343a40; /* Un negro un poco más suave */
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto; /* Más margen superior */
+  background-color: #fff;
+  padding: 40px; /* Más padding */
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1); /* Sombra más suave y difusa */
+  border-radius: 10px; /* Bordes más redondeados */
+  animation: fadeInContainer 0.8s ease-out; /* Animación de entrada */
+}
+
+@keyframes fadeInContainer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 25px; /* Un poco más de padding */
+  margin-bottom: 35px; /* Un poco más de margen */
+  animation: fadeInHeader 0.5s ease-out 0.3s backwards; /* Animación con delay */
+}
+
+@keyframes fadeInHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 35px; /* Un poco más de margen */
+  border: 4px solid #007bff; /* Borde más grueso */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Sombra para la foto */
+}
+
+.header-text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 2.8em; /* Un poco más grande */
+  color: #007bff;
+  font-weight: 700; /* Más peso */
+}
+
+.subtitle {
+  font-size: 1.3em; /* Un poco más grande */
+  color: #495057; /* Color más oscuro */
+  margin-top: 8px;
+  font-weight: 300;
+}
+
+.contact-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.contact-info p {
+  margin: 12px 0;
+  font-size: 1.1em;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.contact-info p:hover {
+  transform: translateX(5px);
+}
+
+.contact-info p::before {
+  font-family: 'Roboto', sans-serif;
+  margin-right: 15px;
+  color: #007bff;
+  font-weight: bold;
+  min-width: 24px;
+  text-align: center;
+}
+
+.contact-info p:nth-child(1)::before {
+  content: '☎';
+}
+
+.contact-info p:nth-child(2)::before {
+  content: '@';
+}
+
+.contact-info p:nth-child(3)::before {
+  content: '⌂';
+}
+
+.contact-info p:nth-child(4)::before {
+  content: '★';
+}
+
+section {
+  margin-bottom: 35px; /* Más margen inferior */
+  animation: fadeInSection 0.6s ease-out 0.5s backwards; /* Animación para secciones */
+}
+
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+section h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em; /* Más grande */
+  color: #0056b3;
+  border-bottom: 2px solid #007bff; /* Borde más prominente y color primario */
+  padding-bottom: 12px;
+  margin-bottom: 25px;
+  text-transform: uppercase; /* Mayúsculas para más impacto */
+  letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.job,
+.education-item,
+.skills-category {
+  margin-bottom: 25px;
+  padding-left: 15px; /* Indentación para mejor estructura */
+  border-left: 3px solid #007bff; /* Línea lateral decorativa */
+  transition: all 0.3s ease; /* Transición para hover */
+}
+
+.job:hover,
+.education-item:hover,
+.skills-category:hover {
+  border-left-color: #0056b3; /* Cambio de color al pasar el ratón */
+  background-color: #f8f9fa; /* Fondo sutil al pasar el ratón */
+}
+
+.job h3,
+.education-item h3,
+.skills-category h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em; /* Más grande */
+  color: #343a40;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.job:hover h3,
+.education-item:hover h3,
+.skills-category:hover h3 {
+  color: #007bff; /* Cambio de color del título al pasar el ratón */
+}
+
+.company,
+.institution {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+  font-weight: 400; /* Peso normal */
+}
+
+ul {
+  list-style-type: none; /* Quitamos los puntos por defecto */
+  padding-left: 0; /* Quitamos padding por defecto */
+}
+
+li {
+  margin-bottom: 10px; /* Más espacio */
+  position: relative; /* Para el pseudo-elemento */
+  padding-left: 20px; /* Espacio para el nuevo "bullet" */
+}
+
+li::before {
+  /* Creamos un "bullet" personalizado */
+  content: "▹"; /* Puedes usar "•", "▸", etc. o un icono de Font Awesome */
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.skills-category ul {
+  display: flex; /* Para que los items se pongan en línea y se ajusten */
+  flex-wrap: wrap; /* Para que se ajusten a la siguiente línea si no caben */
+  padding-left: 0;
+}
+
+.skills-category ul li {
+  background-color: #e9f5ff;
+  padding: 8px 15px; /* Más padding */
+  border-radius: 20px; /* Píldoras más redondeadas */
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #0056b3; /* Color de texto más oscuro */
+  border: 1px solid #bde0ff; /* Borde sutil */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.skills-category ul li::before {
+  content: ""; /* Quitamos el bullet para las skills */
+  padding-left: 0;
+}
+
+.skills-category ul li:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: translateY(-2px); /* Efecto de elevación */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #dee2e6; /* Color de borde más suave */
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #6c757d; /* Color de texto más suave */
+  animation: fadeInSection 0.6s ease-out 0.8s backwards; /* Animación para el footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 120px; /* Más pequeño en móviles */
+    height: 120px; /* Más pequeño en móviles */
+  }
+
+  .header-text h1 {
+    font-size: 2.2em; /* Ajuste para móviles */
+  }
+
+  .subtitle {
+    font-size: 1.1em; /* Ajuste para móviles */
+  }
+
+  .job,
+  .education-item,
+  .skills-category {
+    padding-left: 10px;
+    border-left-width: 2px;
+  }
+
+  section h2 {
+    font-size: 1.7em;
+  }
+
+  .skills-category ul li {
+    padding: 6px 12px;
+    font-size: 0.85em;
+  }
+}

@@ -5,7 +5,7 @@ import { FaLanguage, FaInfoCircle, FaStar } from "react-icons/fa";
 const AdditionalInfo = () => {
   const languages = [
     { language: "Español", level: "Nativo" },
-    { language: "Inglés", level: "Nivel medio hablado y escrito" },
+    { language: "Inglés", level: "Nivel A2" },
   ];
 
   const additionalInfo = [
@@ -25,7 +25,9 @@ const AdditionalInfo = () => {
   return (
     <>
       <section className="languages">
-        <h2><FaLanguage className="section-icon" /> IDIOMAS</h2>
+        <h2>
+          <FaLanguage className="section-icon" /> IDIOMAS
+        </h2>
         <ul>
           {languages.map((lang, index) => (
             <li key={index}>
@@ -36,7 +38,9 @@ const AdditionalInfo = () => {
       </section>
 
       <section className="additional-info">
-        <h2><FaInfoCircle className="section-icon" /> INFORMACIÓN ADICIONAL</h2>
+        <h2>
+          <FaInfoCircle className="section-icon" /> INFORMACIÓN ADICIONAL
+        </h2>
         <ul>
           {additionalInfo.map((info, index) => (
             <li key={index}>{info}</li>
@@ -45,7 +49,9 @@ const AdditionalInfo = () => {
       </section>
 
       <section className="other-info">
-        <h2><FaStar className="section-icon" /> OTROS DATOS DE INTERÉS</h2>
+        <h2>
+          <FaStar className="section-icon" /> OTROS DATOS DE INTERÉS
+        </h2>
         <ul>
           {otherInfo.map((info, index) => (
             <li key={index}>{info}</li>

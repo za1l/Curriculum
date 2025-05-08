@@ -1,55 +1,88 @@
+:root {
+  --education-border: rgba(0, 0, 0, 0.1);
+  --education-hover: rgba(0, 0, 0, 0.03);
+}
+
 .education {
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .education h2 {
-  color: #333;
-  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.8rem;
   font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .education-item {
-  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  background-color: var(--background-primary);
+  border-radius: 8px;
+  border: 1px solid var(--education-border);
+  transition: all 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-2px);
+  background-color: var(--education-hover);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .education-item h3 {
-  color: #444;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
   margin: 0 0 0.5rem 0;
-  font-size: 1.4rem;
 }
 
 .education-item .institution {
-  color: #666;
+  color: var(--text-secondary);
+  font-size: 1rem;
   margin: 0;
 }
 
 .education-item .institution em {
-  color: #777;
+  color: var(--text-secondary);
+  font-style: normal;
+  font-weight: 500;
 }
 
 .additional-education-title {
-  color: #444;
-  margin: 2rem 0 1rem;
+  color: var(--secondary-color);
   font-size: 1.4rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
 }
 
 .additional-education-list {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  padding-left: 1.5rem;
 }
 
 .additional-education-list li {
-  color: #555;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 0.8rem;
+  background-color: var(--background-primary);
+  border-radius: 6px;
+  border: 1px solid var(--education-border);
+  transition: all 0.3s ease;
 }
 
-.additional-education-list li:last-child {
-  margin-bottom: 0;
+.additional-education-list li:hover {
+  transform: translateY(-2px);
+  background-color: var(--education-hover);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .additional-education-list li strong {
-  color: #444;
-  font-weight: 600;
+  color: var(--secondary-color);
+  display: inline-block;
+  margin-right: 0.5rem;
 }

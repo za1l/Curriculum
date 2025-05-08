@@ -2,7 +2,18 @@
 .additional-info,
 .other-info {
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  transition: all 0.3s ease;
+}
+
+.languages:hover,
+.additional-info:hover,
+.other-info:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-color);
 }
 
 .languages:last-child,
@@ -14,24 +25,48 @@
 .languages h2,
 .additional-info h2,
 .other-info h2 {
-  color: #333;
-  margin-bottom: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 1.2rem;
   font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  opacity: 0.9;
 }
 
 .languages ul,
 .additional-info ul,
 .other-info ul {
   margin: 0;
-  padding-left: 1.5rem;
+  padding-left: 0;
+  list-style: none;
 }
 
 .languages li,
 .additional-info li,
 .other-info li {
-  color: #555;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  padding: 0.8rem;
+  background-color: var(--background-primary);
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.languages li:hover,
+.additional-info li:hover,
+.other-info li:hover {
+  background-color: var(--hover-color);
+  transform: translateX(5px);
 }
 
 .languages li:last-child,
@@ -41,6 +76,7 @@
 }
 
 .languages li strong {
-  color: #444;
+  color: var(--secondary-color);
   font-weight: 600;
+  margin-right: 0.5rem;
 }

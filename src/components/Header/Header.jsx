@@ -53,7 +53,7 @@ const Header = () => {
           </div>
           <div className="contact-item">
             <LocationIcon />
-            <p>C/de la Paloma nº 10 4 9ª, Madrid</p>
+            <p>Madrid Capital</p>
           </div>
         </div>
       </div>

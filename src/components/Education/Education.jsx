@@ -27,6 +27,11 @@ const Education = () => {
       institution: "Mancomunidad Valle del Guadiato",
       period: "2007-2008",
     },
+    {
+      title: "TÉCNICO SUPERIOR EN ADMINISTRACIÓN DE SISTEMAS INFORMATICOS",
+      institution: "Instituto de Educación Secundaria	Gran Capitán (Córdoba)",
+      period: "2009-2011",
+    },
   ];
 
   const additionalEducation = [

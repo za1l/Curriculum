@@ -16,7 +16,7 @@ function App() {
       <Skills />
       <AdditionalInfo />
       <footer>
-        <p>&copy; 2024 Israel Murillo. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Israel Murillo. Todos los derechos reservados.</p>
       </footer>
     </div>
   );
